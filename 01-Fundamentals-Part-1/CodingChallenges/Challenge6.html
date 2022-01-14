@@ -1,0 +1,28 @@
+<h1>Challenge 6</h1>
+
+<script>
+  const calcAverage = (score1, score2, score3) => {
+    return (score1 + score2 + score3) / 3;
+  };
+
+  const dolphinsScore = calcAverage(44, 23, 71);
+  const koalasScore = calcAverage(65, 54, 49);
+
+  const secondDolphinsScore = calcAverage(85, 54, 41);
+  const secondKoalasScore = calcAverage(23, 34, 27);
+
+  const checkWinners = (dolphinAverage, koalaAverage) => {
+    // dolphinAverage = calcAverage(dolphin1, dolphin2, dolphin3);
+    // koalaAverage = calcAverage(koala1, koala2, koala3);
+    if (dolphinAverage >= koalaAverage * 2) {
+      return `Dolphins win! ${dolphinAverage} to ${koalaAverage}`;
+    } else if (koalaAverage >= dolphinAverage * 2) {
+      return "Koalas win!";
+    } else {
+      return "No Winner";
+    }
+  };
+
+  console.log(checkWinners(dolphinsScore, koalasScore));
+  console.log(checkWinners(secondDolphinsScore, secondKoalasScore));
+</script>

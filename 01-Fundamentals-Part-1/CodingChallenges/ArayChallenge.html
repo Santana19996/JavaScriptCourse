@@ -1,0 +1,28 @@
+<h1>Array Challenge</h1>
+
+<script>
+  const calcTip = (bill) => {
+    if (bill >= 50 && bill <= 300) {
+      return bill * 0.15;
+    } else {
+      return bill * 0.2;
+    }
+  };
+
+  const testDataBills = [125, 555, 44];
+
+  let value1 = calcTip(testDataBills[0]);
+  let value2 = calcTip(testDataBills[1]);
+  let value3 = calcTip(testDataBills[2]);
+
+  const tipTotal = [value1, value2, value3];
+
+  const billTotal = [
+    value1 + testDataBills[0],
+    value2 + testDataBills[1],
+    value3 + testDataBills[2],
+  ];
+
+  console.log(tipTotal);
+  console.log(billTotal);
+</script>

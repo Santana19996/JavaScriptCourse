@@ -1,0 +1,75 @@
+<h1>Objects</h1>
+
+<script>
+  //   const jonas = [
+  //     'Jonas',
+  //     'Smith',
+  //     2037 - 1991,
+  //     'teacher',
+  //     ['Michael', 'Peter', 'Steven'],
+  //   ];
+
+  //   const jonas = {
+  //     firstName: 'Jonas',
+  //     lastName: 'Smith',
+  //     age: 2037 - 1991,
+  //     job: 'teacher',
+  //     friends: ['Michael', 'Peter', 'Steven'],
+  //   };
+
+  //   console.log(jonas.lastName);
+
+  //   console.log(jonas['lastName']);
+
+  //   const nameKey = 'Name';
+
+  //   console.log(jonas['first' + nameKey]);
+
+  //   console.log(jonas['last' + nameKey]);
+
+  //   //   const interestedIn = prompt(
+  //   //     'What do you want to know about Jonas? Choose between firstname ,lastname,age,job,friends'
+  //   //   );
+
+  //   //   if (jonas[interestedIn]) {
+  //   //     console.log(jonas[interestedIn]);
+  //   //   } else {
+  //   //     console.log('Not valid input');
+  //   //   }
+
+  //   jonas.location = 'Sacramento';
+  //   jonas['twitter'] = '@jonassmith';
+
+  //   console.log(jonas);
+
+  //   console.log(
+  //     `Jonas has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+  //   );
+
+  //   Object Methods
+
+  const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Smith',
+    age: 2037 - 1991,
+    birthYear: 1996,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: function (boolean) {
+      if (boolean === true) {
+        return ' Has a drivers license';
+      }
+    },
+    calcAge: function () {
+      return 2037 - this.birthYear;
+    },
+  };
+
+  //   console.log(jonas.calcAge());
+
+  console.log(
+    `Jonas is a ${jonas.calcAge()} year old ${
+      jonas.job
+    } ,and he ${jonas.hasDriversLicense(true)} `
+  );
+</script>

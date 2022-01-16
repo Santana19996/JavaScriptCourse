@@ -1,0 +1,33 @@
+<h1>Object Challenge</h1>
+
+<script>
+  const mark = {
+    fullName: "Mark",
+    lastName: "Miller",
+    weight: 78,
+    height: 1.69,
+    calcBmi: function () {
+      return this.weight / this.height ** 2;
+    },
+  };
+  const john = {
+    fullName: "John",
+    lastName: "Smith",
+    weight: 92,
+    height: 1.95,
+    calcBmi: function () {
+      return this.weight / this.height ** 2;
+    },
+  };
+
+  let higherBmi = () => {
+    if (mark.calcBmi() > john.calcBmi()) {
+      return `Marks Bmi ${mark.calcBmi()} is higher than Johns Bmi ${john.calcBmi()}`;
+    }
+  };
+
+  console.log(higherBmi());
+
+  //   console.log(mark.calcBmi());
+  //   console.log(john.calcBmi());
+</script>

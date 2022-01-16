@@ -1,0 +1,41 @@
+<h1>Lecture on for Loops</h1>
+
+<script>
+  for (let i = 1; i <= 10; i++) {
+    // console.log('Lifting Weights' + i);
+  }
+
+  const jonas = [
+    'Oscar',
+    'Santana',
+    2022 - 1996,
+    'student',
+    ['Michael', 'Peter', 'Steven'],
+    true,
+  ];
+
+  for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue;
+
+    //   console.log(jonas[i], typeof jonas[i]);
+  }
+
+  for (let i = jonas.length - 1; i >= 0; i--) {
+    // console.log(jonas[i]);
+  }
+
+  for (let i = 1; i < 4; i++) {
+    console.log(`----------Starting exercise----------${i}`);
+    for (let rep = 1; rep < 6; rep++) {
+      //   console.log(`Exercise${i} Lifting weigh repetition${rep}`);
+    }
+  }
+
+  for (let lessons = 1; lessons <= 3; lessons++) {
+    console.log(`Lesson:${lessons}`);
+    for (let songs = 1; songs <= 3; songs++) {
+      console.log(`This is song:${songs}`);
+    }
+  }
+</script>
+1
